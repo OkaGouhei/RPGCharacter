@@ -7,13 +7,20 @@ class Character{
 //コンストラクタ
   public Character(){
     name = "名無し";
-    // setHp(1000);
     hp = 1000;
     mp = 500;
     attackPoint = 10;
   }
+  //コンストラクタのオーバーロード
+  public Character(String name,int hp ,int mp, int attackPoint){
+    this.name = name; //インスタンス変数のnameに引数で受け取ったnameを代入
+    this.hp = hp;
+    this.mp = mp;
+    this.attackPoint = attackPoint;
+  }
+
   public void introduce(){
-    System.out.println("私は"+name+"だ。私の体力は"+hp+"だ。私のマジックポイントは"+mp+"だ。私のアッタクポイントは"+attackPoint+"だ");
+    System.out.println("私は"+name+"だ。私の体力は"+hp+"だ。私のマジックポイントは"+mp+"だ。私のアタックポイントは"+attackPoint+"だ");
   }
   public void damage(int attackPoint,String name){
     System.out.println(this.name+"は"+name+"から" + attackPoint+"ポイントの攻撃を受けた");//this.name インスタンス変数 ,name 引数のname
