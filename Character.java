@@ -21,7 +21,7 @@ class Character{
   }
 
   public void Attack(Character c){
-    System.out.println(name +"の攻撃");
+    System.out.println(name +"の攻撃!!");
     c.damage(attackPoint,name);
   }
 
