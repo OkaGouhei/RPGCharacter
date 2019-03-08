@@ -2,15 +2,18 @@ public class RPGCharacter{
   public static void main(String[] args){
     Character a;
     a = new Character();
-    a.hp = 40;
-    a.mp = 50 ;
-    a.name = "magician";
+    a.setName ("magician");
     a.introduce();
+
     Character b;
     b = new Character();
-    b.hp = 20;
-    b.mp = 30 ;
-    b.name = "Emperor";
+    b.setName ("Emperor");
     b.introduce();
+    b.setAttackPoint(100);
+    System.out.println(b.getName()+ "の" + "アッタクポイントは" + b.getAttackPoint() +"になった");
+    b.introduce();
+
+    b.Attack(a);
+    a.introduce();
   }
 }
