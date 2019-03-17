@@ -18,7 +18,7 @@ class Character{
 
   public void damage(int damagePoint,String name){
     System.out.println(this.name+"は"+name+"から" + damagePoint+"ポイントの攻撃を受けた");//this.name インスタンス変数 ,name 引数のname
-    this.hp -= attackPoint;
+    this.hp -= damagePoint;
   }
 
   public void Attack(Character c){
