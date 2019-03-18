@@ -1,4 +1,6 @@
+package RPG;
 class Knight extends Character{
+
   public Knight(String name,int hp ,int attackPoint){
     this.name = name; //インスタンス変数のnameに引数で受け取ったnameを代入
     this.hp = hp;

@@ -1,7 +1,9 @@
+package RPG;
+
 class Character{
   protected int hp;
   protected int mp;
-  protected int attackPoint;//攻撃力
+  protected int attackPoint;
   protected String name;
 
   //コンストラクタ

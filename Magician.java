@@ -1,3 +1,4 @@
+package RPG;
 class Magician extends Character{
   public Magician(String name,int hp ,int mp){
     this.name = name; //インスタンス変数のnameに引数で受け取ったnameを代入
