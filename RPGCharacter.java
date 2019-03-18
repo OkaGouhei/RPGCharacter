@@ -10,7 +10,7 @@ public class RPGCharacter{
     b.Attack(a);
 
     Character c;
-    c = new Magician("magician",500,300,300);
+    c = new Magician("magician",500,300);
     c.introduce();
     c.Attack(a);
 
