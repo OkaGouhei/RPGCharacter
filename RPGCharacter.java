@@ -1,4 +1,3 @@
-package RPG;
 
 public class RPGCharacter{
   public static void main(String[] args){
@@ -6,12 +5,12 @@ public class RPGCharacter{
     a = new Character("名無し",1000,400,100);
     a.introduce();
 
-    Character b;
+    Knight b;
     b = new Knight("hero",500,300,300);
     b.introduce();
     b.Attack(a);
 
-    Character c;
+    Magician c;
     c = new Magician("magician",500,300,300);
     c.introduce();
     c.Attack(a);

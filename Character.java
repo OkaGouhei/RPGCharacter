@@ -1,4 +1,4 @@
-package RPG;
+
 
 class Character{
   protected int hp;
