@@ -5,7 +5,7 @@ class Character{
   protected String name;
 
   //コンストラクタ
-  public Character(String name,int hp ,int mp, int attackPoint){
+  public Character(,){
     this.name = name; //インスタンス変数のnameに引数で受け取ったnameを代入
     this.hp = hp;
     this.mp = mp;
