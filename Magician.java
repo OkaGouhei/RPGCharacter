@@ -1,10 +1,11 @@
 
 class Magician extends Character{
-  // public Magician(String name,int hp ,int mp){
-  //   this.name = name; //インスタンス変数のnameに引数で受け取ったnameを代入
-  //   this.hp = hp;
-  //   this.mp = mp;
-  // }
+//javaでは継承時にコンストラクタが引き継がれないので、サブクラスの方でもコンストラクタを記載する必要があります。
+//この時にsuper(呼び出したい親のコンストラクタの引数)を書く必要があります。
+  public Magician(String name,int hp ,int mp,int attackPoint){
+    super(name,hp,mp,attackPoint);
+  }
+
   public void introduce(){
     System.out.println("私は魔法が使える"+name+"だ。私の体力は"+hp+"だ。私のマジックポイントは"+mp+"だ");
   }

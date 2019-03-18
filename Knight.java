@@ -1,11 +1,10 @@
 
 class Knight extends Character{
 
-  // public Knight(String name,int hp ,int attackPoint){
-  //   this.name = name; //インスタンス変数のnameに引数で受け取ったnameを代入
-  //   this.hp = hp;
-  //   this.attackPoint = attackPoint;
-  // }
+  public Knight(String name,int hp ,int mp,int attackPoint){
+    super(name,hp,mp,attackPoint);
+  }
+
   public void introduce(){
     System.out.println("私は国王に使える"+name+"だ。私の体力は"+hp+"だ。私のアタックポイントは"+attackPoint+"だ");
   }
