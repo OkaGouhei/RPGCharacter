@@ -13,7 +13,11 @@ class Character{
   }
 
   public void introduce(){
-    System.out.println("私は"+name+"だ。私の体力は"+hp+"だ。私のマジックポイントは"+mp+"だ。私のアタックポイントは"+attackPoint+"だ");
+    if(hp>0){
+      System.out.println("私は"+name+"だ。私の体力は"+hp+"だ。私のマジックポイントは"+mp+"だ。私のアタックポイントは"+attackPoint+"だ");
+    }else{
+      System.out.println(name + "は死んでいる");
+    }
   }
 
   public void damage(int damagePoint,String name){

@@ -6,7 +6,11 @@ class Knight extends Character{
   }
 
   public void introduce(){
-    System.out.println("私は国王に使える"+name+"だ。私の体力は"+hp+"だ。私のアタックポイントは"+attackPoint+"だ");
+    if(hp>0){
+      System.out.println("私は国王に使える"+name+"だ。私の体力は"+hp+"だ。私のアタックポイントは"+attackPoint+"だ");
+    }else{
+      System.out.println(name + "は死んでいる");
+    }
   }
 
   public void SpecialAttack(Character c){
