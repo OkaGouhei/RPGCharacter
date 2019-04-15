@@ -1,4 +1,4 @@
-class Character{
+abstract class Character{
   protected int hp;
   protected int mp;
   protected int attackPoint;
@@ -25,9 +25,6 @@ class Character{
     this.hp -= damagePoint;
   }
 
-  public void Attack(Character c){
-    System.out.println(name +"の攻撃!!");
-    c.damage(attackPoint,name);
-  }
+  public abstract void Attack(Character c);
 
 }

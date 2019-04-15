@@ -17,6 +17,8 @@ class Knight extends Character{
     System.out.println(name +"の猛攻撃!!");
     c.damage(attackPoint*2,name);
   }
+
+  @Override
   public void Attack(Character c){
     SpecialAttack(c);
   }

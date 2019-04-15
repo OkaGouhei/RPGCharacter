@@ -4,13 +4,13 @@ public class RPGCharacter{
 
     Character TeamA[] = new Character[3];
     TeamA[0] = new Knight("heroA",3000,300,300);
-    TeamA[1] = new Magician("magicianA",2000,300,300);
-    TeamA[2] = new Character("dogA",5000,200,200);
+    TeamA[1] = new Magician("magicianA1",2000,300,300);
+    TeamA[2] = new Magician("magicianA2",5000,200,200);
 
     Character TeamB[] = new Character[3];
     TeamB[0] = new Knight("heroB",1000,300,300);
-    TeamB[1] = new Magician("magicianB",5000,300,300);
-    TeamB[2] = new Character("dogB",4000,200,200);
+    TeamB[1] = new Magician("magicianB1",5000,300,300);
+    TeamB[2] = new Magician("magicianB2",4000,200,200);
     do{
         for(int i = 0 ; i<3 ;i++){
             for(int j = 0 ; j<3 ;j++){

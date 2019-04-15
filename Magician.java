@@ -17,6 +17,8 @@ class Magician extends Character{
     System.out.println(name +"の魔法攻撃!!");
     c.damage(mp*2,name);
   }
+
+  @Override
   public void Attack(Character c){
     Magic(c);
   }
