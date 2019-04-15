@@ -24,7 +24,7 @@ public class RPGCharacter{
             TeamA[i].introduce();
             TeamB[i].introduce();
         }
-    }while((TeamA[0].hp > 0 |TeamA[1].hp >0|TeamA[2].hp >0)&(TeamB[0].hp >0 |TeamB[1].hp >0| TeamB[2].hp >0));
+    }while((TeamA[0].hp > 0 || TeamA[1].hp >0 || TeamA[2].hp >0) && (TeamB[0].hp >0 || TeamB[1].hp >0 || TeamB[2].hp >0));
 
     if(TeamA[0].hp <= 0 &&TeamA[1].hp <=0 && TeamA[2].hp <=0){
         System.out.println("TeamAは全滅した");
