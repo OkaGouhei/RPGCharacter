@@ -28,3 +28,4 @@ abstract class Character implements Movable {
   public abstract void Attack(Character c);
 
 }
+
