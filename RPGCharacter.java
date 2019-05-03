@@ -14,8 +14,8 @@ public class RPGCharacter{
     TeamB[1] = new Magician("magicianB1",5000,300,300);
     TeamB[2] = new Magician("magicianB2",4000,200,200);
     do{
-        for(int i = 0 ; i<4 ;i++){
-            for(int j = 0 ; j<3 ;j++){
+        for(int i = 0 ; i<TeamA.length ;i++){
+            for(int j = 0 ; j<TeamB.length  ;j++){
                 if(TeamA[i] instanceof Character){
                     if (((Character)TeamA[i]).hp>0){
                         ((Character)TeamA[i]).Attack(TeamB[j]);
