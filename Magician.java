@@ -13,6 +13,7 @@ class Magician extends Character implements Movable{
       System.out.println(name + "は死んでいる");
     }
   }
+
   public void Magic(Character c){
     System.out.println(name +"の魔法攻撃!!");
     c.damage(mp*2,name);
