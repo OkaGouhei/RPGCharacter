@@ -13,7 +13,7 @@ class Monster implements Movable{
 
   @Override
   public void move(Character Target){
-    System.out.println("モンスター"+ name + "は"+Target + "を攻撃した！");
+    System.out.println("モンスター"+ name + "は"+Target.name + "を攻撃した！");
     Target.damage(attackPoint,name);
   }
 

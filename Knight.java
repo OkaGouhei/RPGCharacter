@@ -25,7 +25,7 @@ class Knight extends Character implements Movable{
 
   @Override
   public void move(Character Target){
-    System.out.println("騎士"+ name + "は"+Target + "を攻撃した！");
+    System.out.println("騎士"+ name + "は"+Target.name + "を攻撃した！");
     Target.damage(attackPoint,name);
   }
 }
