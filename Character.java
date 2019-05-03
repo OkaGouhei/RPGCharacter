@@ -1,4 +1,4 @@
-abstract class Character {
+abstract class Character implements Movable {
   protected int hp;
   protected int mp;
   protected int attackPoint;
