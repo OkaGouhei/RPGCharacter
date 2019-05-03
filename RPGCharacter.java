@@ -7,7 +7,7 @@ public class RPGCharacter{
     TeamA[0] = new Knight("heroA",3000,300,300);
     TeamA[1] = new Magician("magicianA1",2000,300,300);
     TeamA[2] = new Magician("magicianA2",5000,200,200);
-    // TeamA[3] = new Monster("モンスター",5000,200,200);
+    Monster ET = new Monster("ET",5000,200,200);
 
 
     Character TeamB[] = new Character[3];
@@ -20,6 +20,7 @@ public class RPGCharacter{
                 if (TeamA[i].hp>0){
                     TeamA[i].Attack(TeamB[j]);
                     TeamA[i].move(TeamB[j]);
+                    ET.move(TeamB[j]);
                 }
                 if (TeamB[i].hp>0){
                     TeamB[i].Attack(TeamA[j]);
