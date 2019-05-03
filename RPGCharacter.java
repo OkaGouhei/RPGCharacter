@@ -2,7 +2,7 @@
 public class RPGCharacter{
   public static void main(String[] args){
 
-    Movable TeamA[] = new Movable[3];
+    Character TeamA[] = new Character[3];
 
     TeamA[0] = new Knight("heroA",3000,300,300);
     TeamA[1] = new Magician("magicianA1",2000,300,300);
