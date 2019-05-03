@@ -1,5 +1,5 @@
 
-class Magician extends Character{
+class Magician extends Character implements Movable{
 //javaでは継承時にコンストラクタが引き継がれないので、サブクラスの方でもコンストラクタを記載する必要がある。
 //この時にsuper(呼び出したい親のコンストラクタの引数)を書く必要がある。
   public Magician(String name,int hp ,int mp,int attackPoint){
@@ -23,5 +23,10 @@ class Magician extends Character{
     Magic(c);
   }
 
+  @Override
+  public void move(Character Target){
+    System.out.println("マジシャン"+ name + "は"+Target + "を攻撃した！");
+    Target.damage(mp,name);
+  }
 
 }

@@ -2,7 +2,8 @@
 public class RPGCharacter{
   public static void main(String[] args){
 
-    Character TeamA[] = new Character[3];
+    Movable TeamA[] = new Movable[3];
+
     TeamA[0] = new Knight("heroA",3000,300,300);
     TeamA[1] = new Magician("magicianA1",2000,300,300);
     TeamA[2] = new Magician("magicianA2",5000,200,200);
@@ -16,6 +17,7 @@ public class RPGCharacter{
             for(int j = 0 ; j<3 ;j++){
                 if (TeamA[i].hp>0){
                     TeamA[i].Attack(TeamB[j]);
+                    TeamA[i].move(TeamB[j]);
                 }
                 if (TeamB[i].hp>0){
                     TeamB[i].Attack(TeamA[j]);

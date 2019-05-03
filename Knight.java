@@ -1,5 +1,5 @@
 
-class Knight extends Character{
+class Knight extends Character implements Movable{
 
   public Knight(String name,int hp ,int mp,int attackPoint){
     super(name,hp,mp,attackPoint);
@@ -23,4 +23,9 @@ class Knight extends Character{
     SpecialAttack(c);
   }
 
+  @Override
+  public void move(Character Target){
+    System.out.println("騎士"+ name + "は"+Target + "を攻撃した！");
+    Target.damage(attackPoint,name);
+  }
 }
