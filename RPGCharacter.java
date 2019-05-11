@@ -19,10 +19,10 @@ public class RPGCharacter{
                 if(TeamA[i] instanceof Character){
                     if (((Character)TeamA[i]).hp>0){
                         ((Character)TeamA[i]).Attack(TeamB[j]);
-                        (TeamA[i]).move(TeamB[j]);
+                        TeamA[i].move(TeamB[j]);
                     }
                 }else{
-                    (TeamA[i]).move(TeamB[j]);
+                    TeamA[i].move(TeamB[j]);
                 }
                 if (TeamB[j].hp>0){
                     if(TeamA[i] instanceof Character){

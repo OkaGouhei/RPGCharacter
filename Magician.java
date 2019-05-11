@@ -8,14 +8,14 @@ class Magician extends Character implements Movable{
 
   public void introduce(){
     if(hp>0){
-    System.out.println("私は魔法が使える"+name+"だ。私の体力は"+hp+"だ。私のマジックポイントは"+mp+"だ");
+    System.out.println("私は魔法が使える"+ name +"だ。私の体力は"+ hp +"だ。私のマジックポイントは"+ mp +"だ");
     }else{
       System.out.println(name + "は死んでいる");
     }
   }
 
   public void Magic(Character c){
-    System.out.println(name +"の魔法攻撃!!");
+    System.out.println(name + "の魔法攻撃!!");
     c.damage(mp*2,name);
   }
 
@@ -26,7 +26,7 @@ class Magician extends Character implements Movable{
 
   @Override
   public void move(Character Target){
-    System.out.println("マジシャン"+ name + "は"+Target.name + "を攻撃した！");
+    System.out.println("マジシャン"+ name +"は"+ Target.name +"を攻撃した！");
     Target.damage(mp,name);
   }
 

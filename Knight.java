@@ -14,7 +14,7 @@ class Knight extends Character implements Movable{
   }
 
   public void SpecialAttack(Character c){
-    System.out.println(name +"の猛攻撃!!");
+    System.out.println(name + "の猛攻撃!!");
     c.damage(attackPoint*2,name);
   }
 
