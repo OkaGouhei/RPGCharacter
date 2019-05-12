@@ -16,5 +16,8 @@ class Monster implements Movable{
     System.out.println("モンスター"+ name + "は"+Target.name + "を攻撃した！");
     Target.damage(attackPoint,name);
   }
+  public int getHp() {
+    return this.hp;
+  }
 
 }

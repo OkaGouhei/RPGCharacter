@@ -27,5 +27,9 @@ abstract class Character {
 
   public abstract void Attack(Character c);
 
+  public int getHp() {
+    return this.hp;
+  }
+
 }
 

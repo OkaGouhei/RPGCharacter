@@ -13,18 +13,22 @@ public class RPGCharacter{
     TeamB[0] = new Knight("heroB",1000,300,300);
     TeamB[1] = new Magician("magicianB1",5000,300,300);
     TeamB[2] = new Magician("magicianB2",4000,200,200);
+
+    boolean TeamA_LOSE ;
+    boolean TeamB_LOSE ;
+
     do{
         for(int i = 0 ; i<TeamA.length ;i++){
             for(int j = 0 ; j<TeamB.length  ;j++){
                 if(TeamA[i] instanceof Character){
-                    if (((Character)TeamA[i]).hp>0){
+                    if (((Character)TeamA[i]).getHp()>0){
                         ((Character)TeamA[i]).Attack(TeamB[j]);
                         TeamA[i].move(TeamB[j]);
                     }
                 }else{
                     TeamA[i].move(TeamB[j]);
                 }
-                if (TeamB[j].hp>0){
+                if (TeamB[j].getHp()>0){
                     if(TeamA[i] instanceof Character){
                         TeamB[j].Attack((Character)TeamA[i]);
                     }
@@ -35,11 +39,13 @@ public class RPGCharacter{
                 TeamB[j].introduce();
             }
         }
-    }while(( ((Character)TeamA[0]).hp > 0 || ((Character)TeamA[1]).hp >0 || ((Character)TeamA[2]).hp >0|| ((Monster)TeamA[3]).hp >0 ) &&( TeamB[0].hp >0 || TeamB[1].hp >0 || TeamB[2].hp >0 ));
-    if(((Character)TeamA[0]).hp <= 0 &&((Character)TeamA[1]).hp <=0 && ((Character)TeamA[2]).hp <=0 && ((Monster)TeamA[3]).hp<=0){
+        TeamA_LOSE = (((Character)TeamA[0]).getHp() <= 0 &&((Character)TeamA[1]).getHp() <=0 && ((Character)TeamA[2]).getHp() <=0 && ((Monster)TeamA[3]).getHp()<=0);
+        TeamB_LOSE = (TeamB[0].getHp() <= 0 &&TeamB[1].getHp() <=0 && TeamB[2].getHp()<=0 );
+    }while(( !TeamA_LOSE ) && ( !TeamB_LOSE ));
+    if(TeamA_LOSE){
         System.out.println("TeamAは全滅した");
     }
-    if(TeamB[0].hp <= 0 &&TeamB[1].hp <=0 && TeamB[2].hp <=0 ){
+    if(TeamB_LOSE){
         System.out.println("TeamBは全滅した");
     }
   }
